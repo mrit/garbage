@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<hudson.plugins.scm__sync__configuration.ScmSyncConfigurationPlugin version='1'>
-    <scm class='hudson.plugins.scm_sync_configuration.scms.ScmSyncGitSCM'/>
-    <scmRepositoryUrl>scm:git:https://mrit:R1p3r4p3@github.com/mrit/garbage.git</scmRepositoryUrl>
-    <noUserCommitMessage>false</noUserCommitMessage>
-    <displayStatus>true</displayStatus>
-    <commitMessagePattern>[message]</commitMessagePattern>
-    <defaultBranch>master</defaultBranch>
-    <manualSynchronizationIncludes/>
+<hudson.plugins.scm__sync__configuration.ScmSyncConfigurationPlugin version="1">
+  <scm class="hudson.plugins.scm_sync_configuration.scms.ScmSyncGitSCM"/>
+  <scmRepositoryUrl>scm:git:https://mrit:R1p3r4p3@github.com/mrit/garbage.git</scmRepositoryUrl>
+  <noUserCommitMessage>false</noUserCommitMessage>
+  <displayStatus>true</displayStatus>
+  <commitMessagePattern>[message]</commitMessagePattern>
+  <defaultBranch>master</defaultBranch>
+  <manualSynchronizationIncludes>
+    <include>plugins/**/*</include>
+  </manualSynchronizationIncludes>
 </hudson.plugins.scm__sync__configuration.ScmSyncConfigurationPlugin>
